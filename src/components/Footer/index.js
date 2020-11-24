@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import './Footer.module.css'
+import "./Footer.module.css"
+
 const Footer = ({ siteTitle }) => (
   <footer>
     © {new Date().getFullYear()}, {siteTitle} built with

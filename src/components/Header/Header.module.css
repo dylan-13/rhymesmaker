@@ -13,7 +13,7 @@
 }
 
 .Container > .PageCol > button {
-  width: 140px;
+  width: 120px;
   background: none;
   border: none;
   color: #ffffff;
@@ -26,6 +26,10 @@
   padding-top: 2px;
   border-bottom: 1px solid #662e91;
   width: 50px;
+}
+
+.Container > .PageCol > button:focus {
+border: none;
 }
 
 .PageCol {

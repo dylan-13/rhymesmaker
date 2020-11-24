@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  color: #ffffff;
+  outline: none;
 }
 
 body {
@@ -17,13 +19,6 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-}
-
-h1,
-p,
-footer,
-div {
-  color: #ffffff;
 }
 
 a {

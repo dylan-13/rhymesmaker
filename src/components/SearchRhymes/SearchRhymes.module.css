@@ -1,0 +1,13 @@
+.PageRow {
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.SearchInput {
+  width: 300px;
+}
+
+.SearchButton {
+  width: 120px;
+}
