@@ -25,14 +25,10 @@ footer,
 div {
   color: #ffffff;
 }
+
 a {
   text-decoration: none;
   color: inherit;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  margin: 10px;
 }
 
 .MainPage {
