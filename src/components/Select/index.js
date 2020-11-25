@@ -1,5 +1,11 @@
 import React from "react"
-import { SelectCss, AnimatedButton } from "./Select.module.css"
+import {
+  SelectCss,
+  SelectMenu,
+  SelectOption,
+  AnimatedButton,
+  Test,
+} from "./Select.module.css"
 import Select, { components } from "react-select"
 
 const StyledSelect = ({ name, className, ...props }) => {
@@ -7,6 +13,14 @@ const StyledSelect = ({ name, className, ...props }) => {
     return (
       <div className={AnimatedButton}>
         <components.IndicatorsContainer {...props} />
+      </div>
+    )
+  }
+
+  const Option = props => {
+    return (
+      <div className={SelectOption}>
+        <components.Option className={SelectOption} {...props} />
       </div>
     )
   }
@@ -19,7 +33,7 @@ const StyledSelect = ({ name, className, ...props }) => {
       <Select
         name={name}
         className={[SelectCss, className].join(" ")}
-        components={{ IndicatorsContainer }}
+        components={{ IndicatorsContainer, Option }}
         {...props}
       />
     </>

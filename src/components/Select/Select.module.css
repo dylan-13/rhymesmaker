@@ -9,6 +9,28 @@
   height: 40px;
 }
 
+.SelectCss,
+.SelectCss > div,
+.Test {
+  outline: none !important;
+  border: none !important;
+}
+
+.SelectOption {
+  color: #18191a;
+  background: #ffffff;
+}
+
+.SelectOption:hover {
+  background: #3e4042;
+  color: #ffffff;
+}
+
+.Test {
+  color: red;
+  background: aqua;
+}
+
 .AnimatedButton {
   height: 35px;
   width: 35px;
