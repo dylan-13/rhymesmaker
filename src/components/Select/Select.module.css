@@ -10,8 +10,7 @@
 }
 
 .SelectCss,
-.SelectCss > div,
-.Test {
+.SelectCss > div {
   outline: none !important;
   border: none !important;
 }
