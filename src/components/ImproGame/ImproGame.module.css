@@ -9,5 +9,9 @@
 }
 
 .SearchButton {
-  width: 120px;
+  width: 40px;
+}
+
+.SearchSelect {
+  width: 250px;
 }

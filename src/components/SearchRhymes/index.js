@@ -1,8 +1,8 @@
 import React from "react"
 import Input from "../../components/Input"
 import Button from "../../components/Button"
-import { PageRow, SearchInput, SearchButton, SearchSelect } from "./SearchRhymes.module.css"
 import Select from "../../components/Select"
+import { PageRow, SearchInput, SearchButton, SearchSelect } from "./SearchRhymes.module.css"
 
 const SearchRhymes = () => {
   return (
