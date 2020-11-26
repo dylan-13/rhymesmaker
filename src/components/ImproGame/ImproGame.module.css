@@ -1,0 +1,25 @@
+.Container {
+  margin: 40px 0;
+}
+
+.PageRow {
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.SearchInput {
+  width: 210px;
+}
+
+.SearchSelect {
+  width: 210px;
+}
+
+.SearchLongSelect {
+  width: 370px;
+}
+
+.SearchButton {
+  width: 50px;
+}
