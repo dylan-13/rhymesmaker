@@ -4,12 +4,8 @@
   color: #18191a;
 }
 
-.SelectCss > div:nth-child(1) {
-  border-radius: 10px;
-  height: 40px;
-}
-
 .SelectCss,
+.Focused,
 .SelectCss > div {
   outline: none !important;
   border: none !important;
@@ -18,11 +14,6 @@
 .SelectOption {
   color: #18191a;
   background: #ffffff;
-}
-
-.SelectOption:hover {
-  background: #3e4042;
-  color: #ffffff;
 }
 
 .AnimatedButton {
