@@ -12,6 +12,7 @@ const SearchRhymes = () => {
           className={SearchInput}
           placeholder="mot ou terminaison.."
           label="rime en"
+          // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus
         />
         <Button
