@@ -40,7 +40,7 @@ const ImproGame = () => {
         <Button
           className={SearchButton}
           onClick={() => console.log("ButtonClick")}
-          content="Rechercher"
+          content="Go"
         />
       </div>
     </>
