@@ -45,7 +45,7 @@ const StyledSelect = ({ name, className, ...props }) => {
           control: base => ({
             ...base,
             borderRadius: 10,
-            height: 40,
+            height: 38,
           }),
           option: (base, { isSelected }) => ({
             ...base,

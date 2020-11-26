@@ -1,17 +1,25 @@
 import React from "react"
-import Select from "../../components/Select"
-import { PageRow, SearchInput, SearchSelect } from "./ImproGame.module.css"
+import Input from "../Input"
+import Select from "../Select"
+import Button from "../Button"
+import {
+  Container,
+  PageRow,
+  SearchInput,
+  SearchSelect,
+  SearchLongSelect,
+  SearchButton,
+} from "./ImproGame.module.css"
 
 const ImproGame = () => {
   return (
-    <>
+    <div className={Container}>
       <h1>Mini-jeu d’impro freestyle</h1>
       <div className={PageRow}>
         <Input
           className={SearchInput}
           placeholder="mot ou terminaison.."
           label="rime en"
-          autoFocus
         />
         <Select
           name="difficulty"
@@ -25,9 +33,9 @@ const ImproGame = () => {
         />
       </div>
       <div className={PageRow}>
-      <Select
+        <Select
           name="instru"
-          className={SearchSelect}
+          className={SearchLongSelect}
           placeholder="Type d'instrumentale.."
           options={[
             { value: "Acoustique", label: "Acoustique" },
@@ -43,7 +51,7 @@ const ImproGame = () => {
           content="Go"
         />
       </div>
-    </>
+    </div>
   )
 }
 

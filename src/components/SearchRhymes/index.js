@@ -1,11 +1,16 @@
 import React from "react"
 import Input from "../../components/Input"
 import Button from "../../components/Button"
-import { PageRow, SearchInput, SearchButton } from "./SearchRhymes.module.css"
+import {
+  Container,
+  PageRow,
+  SearchInput,
+  SearchButton,
+} from "./SearchRhymes.module.css"
 
 const SearchRhymes = () => {
   return (
-    <>
+    <div className={Container}>
       <h1>Recherche complète de rimes</h1>
       <div className={PageRow}>
         <Input
@@ -21,7 +26,7 @@ const SearchRhymes = () => {
           content="Rechercher"
         />
       </div>
-    </>
+    </div>
   )
 }
 

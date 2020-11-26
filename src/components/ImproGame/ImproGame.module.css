@@ -1,3 +1,7 @@
+.Container {
+  margin: 40px 0;
+}
+
 .PageRow {
   display: flex;
   margin: 20px 0;
@@ -5,13 +9,17 @@
 }
 
 .SearchInput {
-  width: 300px;
-}
-
-.SearchButton {
-  width: 40px;
+  width: 210px;
 }
 
 .SearchSelect {
-  width: 250px;
+  width: 210px;
+}
+
+.SearchLongSelect {
+  width: 370px;
+}
+
+.SearchButton {
+  width: 50px;
 }
