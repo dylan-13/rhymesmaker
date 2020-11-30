@@ -1,15 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 import {
   SelectCss,
   SelectOption,
   AnimatedButton,
-  Focused,
 } from "./Select.module.css"
 import Select, { components } from "react-select"
 
 const StyledSelect = ({ name, className, ...props }) => {
-  const [focused, setFocused] = useState(false)
-
   const IndicatorsContainer = props => {
     return (
       <div className={AnimatedButton}>
@@ -33,11 +30,9 @@ const StyledSelect = ({ name, className, ...props }) => {
       </label>
       <Select
         name={name}
-        className={[SelectCss, focused && Focused, className].join(" ")}
+        className={[SelectCss, className].join(" ")}
         isSearchable={false}
         components={{ IndicatorsContainer, Option }}
-        onFocus={() => setFocused(true)}
-        onBlur={() => setFocused(false)}
         styles={{
           indicatorSeparator: base => ({
             ...base,
