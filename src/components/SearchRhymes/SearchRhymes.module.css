@@ -11,3 +11,8 @@
   margin: 20px 0;
 }
 
+@media (max-width: 600px) {
+  .SearchTitle {
+    font-size: 22px;
+  }
+}

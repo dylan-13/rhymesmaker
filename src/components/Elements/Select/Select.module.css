@@ -35,3 +35,9 @@
     background-position: 0% 46%;
   }
 }
+
+@media (max-width: 600px) {
+  .SelectCss {
+    font-size: 14px;
+  }
+}

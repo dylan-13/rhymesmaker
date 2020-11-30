@@ -29,7 +29,7 @@
 }
 
 .Container > .PageCol > button:focus {
-border: none;
+  border: none;
 }
 
 .PageCol {
@@ -48,7 +48,13 @@ border: none;
   width: 140px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  .Container > .PageCol > button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
   .TypoImg {
     display: none;
   }

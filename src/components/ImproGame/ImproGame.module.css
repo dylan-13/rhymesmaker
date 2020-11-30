@@ -22,3 +22,9 @@
 .ImproGameButton {
   width: 50px;
 }
+
+@media (max-width: 600px) {
+  .ImproGameTitle {
+    font-size: 22px;
+  }
+}

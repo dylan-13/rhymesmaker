@@ -24,3 +24,9 @@
     background-position: 0% 46%;
   }
 }
+
+@media (max-width: 600px) {
+  .ButtonCss {
+    font-size: 14px;
+  }
+}
