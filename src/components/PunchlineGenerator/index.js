@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Button from "../Button"
 import TextArea from "../TextArea"
 
@@ -9,6 +9,7 @@ import {
 } from "./PunchlineGenerator.module.css"
 
 const PunchlineGenerator = () => {
+  const [showResult, setShowResult] = useState(false)
   return (
     <div className={PunchlineGeneratorContainer}>
       <TextArea
@@ -17,13 +18,12 @@ const PunchlineGenerator = () => {
       />
       <Button
         className={PunchlineGeneratorButton}
-        onClick={() => console.log("ButtonClick")}
+        onClick={() => setShowResult(true)}
         content="Rechercher"
       />
-      <TextArea
-        className={PunchlineGeneratorTextArea}
-        disabled
-      />
+      {showResult && (
+        <TextArea className={PunchlineGeneratorTextArea} disabled />
+      )}
     </div>
   )
 }
