@@ -1,7 +1,7 @@
 import React from "react"
 
-import Select from "../Select"
-import Button from "../Button"
+import Select from "../Elements/Select"
+import Button from "../Elements/Button"
 
 import {
   Container,

@@ -1,6 +1,6 @@
 import React from "react"
-import Input from "../../components/Input"
-import Button from "../../components/Button"
+import Input from "../../components/Elements/Input"
+import Button from "../../components/Elements/Button"
 import { Container, PageRow, SearchTitle } from "./SearchRhymes.module.css"
 
 const SearchRhymes = () => {

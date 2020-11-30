@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import Button from "../Button"
-import TextArea from "../TextArea"
+import Button from "../Elements/Button"
+import TextArea from "../Elements/TextArea"
 
 import {
   PunchlineGeneratorContainer,
