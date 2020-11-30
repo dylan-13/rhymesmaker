@@ -1,5 +1,7 @@
 import React from "react"
 import { string } from "prop-types"
+import TextareaAutosize from 'react-autosize-textarea';
+
 import { TextAreaCss, LabelCss, InputCss } from "./TextArea.module.css"
 
 const TextArea = ({ label, name, className, ...props }) => {
@@ -8,10 +10,11 @@ const TextArea = ({ label, name, className, ...props }) => {
       <label className={LabelCss} htmlFor={name}>
         {label}
       </label>
-      <textarea
+      <TextareaAutosize
         className={[InputCss, className].join(" ")}
         id={name}
         {...props}
+        onResize={(e) => {}} 
       />
     </div>
   )
