@@ -5,25 +5,45 @@ import Button from "../Button"
 import {
   Container,
   PageRow,
-  SearchInput,
-  SearchSelect,
-  SearchLongSelect,
-  SearchButton,
+  ImproGameTitle,
+  ImproGameSelect,
+  ImproGameLongSelect,
+  ImproGameButton,
 } from "./ImproGame.module.css"
 
 const ImproGame = () => {
   return (
     <div className={Container}>
-      <h1>Mini-jeu d’impro freestyle</h1>
+      <h1 className={ImproGameTitle}>Mini-jeu d’impro freestyle</h1>
       <div className={PageRow}>
-        <Input
-          className={SearchInput}
-          placeholder="mot ou terminaison.."
-          label="rime en"
+        <Select
+          name="ending"
+          className={ImproGameSelect}
+          placeholder="Terminaison"
+          options={[
+            { value: "a", label: "a" },
+            { value: "an", label: "an" },
+            { value: "b", label: "b" },
+            { value: "e", label: "e" },
+            { value: "f", label: "f" },
+            { value: "g", label: "g" },
+            { value: "gne", label: "gne" },
+            { value: "er", label: "er" },
+            { value: "d", label: "d" },
+            { value: "i", label: "i" },
+            { value: "il", label: "il" },
+            { value: "in", label: "in" },
+            { value: "ma", label: "ma" },
+            { value: "me", label: "me" },
+            { value: "o", label: "o" },
+            { value: "on", label: "on" },
+            { value: "u", label: "u" },
+            { value: "un", label: "un" },
+          ]}
         />
         <Select
           name="difficulty"
-          className={SearchSelect}
+          className={ImproGameSelect}
           placeholder="Difficulté.."
           options={[
             { value: "Facile", label: "Facile" },
@@ -35,7 +55,7 @@ const ImproGame = () => {
       <div className={PageRow}>
         <Select
           name="instru"
-          className={SearchLongSelect}
+          className={ImproGameLongSelect}
           placeholder="Type d'instrumentale.."
           options={[
             { value: "Acoustique", label: "Acoustique" },
@@ -46,7 +66,7 @@ const ImproGame = () => {
           ]}
         />
         <Button
-          className={SearchButton}
+          className={ImproGameButton}
           onClick={() => console.log("ButtonClick")}
           content="Go"
         />
