@@ -5,21 +5,20 @@
 .PageRow {
   display: flex;
   margin: 20px 0;
-  flex-wrap: wrap;
 }
 
-.SearchInput {
+.ImproGameTitle {
+  font-size: 26px;
+}
+
+.ImproGameSelect {
   width: 210px;
 }
 
-.SearchSelect {
-  width: 210px;
-}
-
-.SearchLongSelect {
+.ImproGameLongSelect {
   width: 370px;
 }
 
-.SearchButton {
+.ImproGameButton {
   width: 50px;
 }

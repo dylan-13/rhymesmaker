@@ -34,6 +34,7 @@ const StyledSelect = ({ name, className, ...props }) => {
       <Select
         name={name}
         className={[SelectCss, focused && Focused, className].join(" ")}
+        isSearchable={false}
         components={{ IndicatorsContainer, Option }}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}

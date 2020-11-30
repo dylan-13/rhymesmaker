@@ -1,0 +1,29 @@
+.TextAreaCss {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+}
+
+.LabelCss {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.InputCss {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 420px;
+  min-height: 80px;
+  resize: vertical;
+  padding: 10px 8px;
+  border: 1px solid #000000;
+  font-size: 18px;
+  color: #18191a;
+  border-radius: 10px;
+}
+
+.InputCss::placeholder {
+  color: #808080;
+}
