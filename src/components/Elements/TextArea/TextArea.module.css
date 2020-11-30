@@ -27,3 +27,12 @@
 .InputCss::placeholder {
   color: #808080;
 }
+
+@media (max-width: 600px) {
+  .InputCss {
+    font-size: 14px;
+  }
+  .LabelCss {
+    font-size: 22px;
+  }
+}

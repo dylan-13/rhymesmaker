@@ -29,13 +29,20 @@ a {
 .MainPage {
   margin: 0 auto;
   max-width: 960px;
-  padding: 20px 40px;
-  border-left: 1px solid;
-  border-right: 1px solid;
+  min-height: calc(100vh - 110px);
+  padding: 40px;
+  border-left: 1px solid #8e8e8e;
+  border-right: 1px solid #8e8e8e;
 }
 
 @media (max-width: 960px) {
   .MainPage {
     border: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .MainPage {
+    padding: 40px 20px 0;
   }
 }

@@ -19,7 +19,7 @@ const PunchlineGenerator = () => {
       <Button
         className={PunchlineGeneratorButton}
         onClick={() => setShowResult(true)}
-        content="Rechercher"
+        content="Complèter"
       />
       {showResult && (
         <TextArea className={PunchlineGeneratorTextArea} disabled />
