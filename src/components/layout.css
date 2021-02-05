@@ -31,14 +31,6 @@ a {
   max-width: 960px;
   min-height: calc(100vh - 110px);
   padding: 40px;
-  border-left: 1px solid #8e8e8e;
-  border-right: 1px solid #8e8e8e;
-}
-
-@media (max-width: 960px) {
-  .MainPage {
-    border: none;
-  }
 }
 
 @media (max-width: 600px) {
