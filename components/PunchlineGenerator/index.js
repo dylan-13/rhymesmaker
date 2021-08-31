@@ -1,0 +1,30 @@
+import { useState } from "react";
+import Button from "../Elements/Button";
+import TextArea from "../Elements/TextArea";
+
+import {
+  PunchlineGeneratorContainer,
+  PunchlineGeneratorButton,
+  PunchlineGeneratorTextArea,
+} from "./PunchlineGenerator.module.css";
+
+export default function PunchlineGenerator() {
+  const [showResult, setShowResult] = useState(false);
+
+  return (
+    <div className={PunchlineGeneratorContainer}>
+      <TextArea
+        label="Générateur de punchlines"
+        placeholder="rentrez une phrase ici..."
+      />
+      <Button
+        className={PunchlineGeneratorButton}
+        onClick={() => setShowResult(true)}
+        content="Complèter"
+      />
+      {showResult && (
+        <TextArea className={PunchlineGeneratorTextArea} disabled />
+      )}
+    </div>
+  );
+}
