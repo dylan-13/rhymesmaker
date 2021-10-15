@@ -1,16 +1,24 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header'
+import Footer from './Footer'
+import styled from 'styled-components'
 
-import "./layout.css";
+const Wrapper = styled.main`
+  margin: 0 auto;
+  max-width: 960px;
+  min-height: calc(100vh - 110px);
+  padding: 40px;
+
+  @media (max-width: 600px) {
+    padding: 40px 20px 0;
+  }
+`
 
 export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <div className="MainPage">
-        <main>{children}</main>
-      </div>
+      <Wrapper>{children}</Wrapper>
       <Footer />
     </>
-  );
+  )
 }
