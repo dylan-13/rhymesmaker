@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const StyledInput = styled.input`
   width: 100%;
-  max-width: 300px;
   height: 40px;
   padding: 2px 8px;
   border: 1px solid #000000;

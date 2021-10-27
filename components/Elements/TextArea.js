@@ -5,7 +5,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 420px;
 `
 
 const Label = styled.label`
@@ -20,7 +19,6 @@ const Label = styled.label`
 const StyledTextArea = styled(TextareaAutosize)`
   margin: 20px 0;
   width: 100%;
-  max-width: 420px;
   min-height: 80px;
   resize: vertical;
   padding: 10px 8px;

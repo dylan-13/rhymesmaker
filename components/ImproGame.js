@@ -13,9 +13,17 @@ const Title = styled.h1`
   }
 `
 
+const PageRowWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+`
+
 const PageRow = styled.div`
   display: flex;
-  margin: 20px 0;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 420px;
 `
 
 const StyledSelect = styled(Select)`
@@ -23,62 +31,64 @@ const StyledSelect = styled(Select)`
 `
 
 const StyledLongSelect = styled(Select)`
-  width: 370px;
+  width: 100%;
 `
 
 export default function ImproGame() {
   return (
     <Container>
       <Title>Mini-jeu d’impro freestyle</Title>
-      <PageRow>
-        <StyledSelect
-          name="ending"
-          placeholder="Terminaison"
-          options={[
-            { value: 'a', label: 'a' },
-            { value: 'an', label: 'an' },
-            { value: 'b', label: 'b' },
-            { value: 'e', label: 'e' },
-            { value: 'f', label: 'f' },
-            { value: 'g', label: 'g' },
-            { value: 'gne', label: 'gne' },
-            { value: 'er', label: 'er' },
-            { value: 'd', label: 'd' },
-            { value: 'i', label: 'i' },
-            { value: 'il', label: 'il' },
-            { value: 'in', label: 'in' },
-            { value: 'ma', label: 'ma' },
-            { value: 'me', label: 'me' },
-            { value: 'o', label: 'o' },
-            { value: 'on', label: 'on' },
-            { value: 'u', label: 'u' },
-            { value: 'un', label: 'un' }
-          ]}
-        />
-        <StyledSelect
-          name="difficulty"
-          placeholder="Difficulté.."
-          options={[
-            { value: 'Facile', label: 'Facile' },
-            { value: 'Moyen', label: 'Moyen' },
-            { value: 'Difficile', label: 'Difficile' }
-          ]}
-        />
-      </PageRow>
-      <PageRow>
-        <StyledLongSelect
-          name="instru"
-          placeholder="Type d'instrumentale.."
-          options={[
-            { value: 'Acoustique', label: 'Acoustique' },
-            { value: 'Fast Rap', label: 'Fast Rap' },
-            { value: 'Lo-Fi', label: 'Lo-Fi' },
-            { value: 'Trap', label: 'Trap' },
-            { value: 'Yencli', label: 'Yencli' }
-          ]}
-        />
-        <Button onClick={() => console.log('ButtonClick')} content="Go" />
-      </PageRow>
+      <PageRowWrapper>
+        <PageRow>
+          <StyledSelect
+            name="ending"
+            placeholder="Terminaison"
+            options={[
+              { value: 'a', label: 'a' },
+              { value: 'an', label: 'an' },
+              { value: 'b', label: 'b' },
+              { value: 'e', label: 'e' },
+              { value: 'f', label: 'f' },
+              { value: 'g', label: 'g' },
+              { value: 'gne', label: 'gne' },
+              { value: 'er', label: 'er' },
+              { value: 'd', label: 'd' },
+              { value: 'i', label: 'i' },
+              { value: 'il', label: 'il' },
+              { value: 'in', label: 'in' },
+              { value: 'ma', label: 'ma' },
+              { value: 'me', label: 'me' },
+              { value: 'o', label: 'o' },
+              { value: 'on', label: 'on' },
+              { value: 'u', label: 'u' },
+              { value: 'un', label: 'un' }
+            ]}
+          />
+          <StyledSelect
+            name="difficulty"
+            placeholder="Difficulté.."
+            options={[
+              { value: 'Facile', label: 'Facile' },
+              { value: 'Moyen', label: 'Moyen' },
+              { value: 'Difficile', label: 'Difficile' }
+            ]}
+          />
+        </PageRow>
+        <PageRow>
+          <StyledLongSelect
+            name="instru"
+            placeholder="Type d'instrumentale.."
+            options={[
+              { value: 'Acoustique', label: 'Acoustique' },
+              { value: 'Fast Rap', label: 'Fast Rap' },
+              { value: 'Lo-Fi', label: 'Lo-Fi' },
+              { value: 'Trap', label: 'Trap' },
+              { value: 'Yencli', label: 'Yencli' }
+            ]}
+          />
+          <Button onClick={() => console.log('ButtonClick')} content="Go" />
+        </PageRow>
+      </PageRowWrapper>
     </Container>
   )
 }

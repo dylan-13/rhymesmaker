@@ -5,7 +5,6 @@ import TextArea from './Elements/TextArea'
 
 const Container = styled.div`
   margin: 40px 0;
-  max-width: 420px;
   width: 100%;
   display: flex;
   flex-direction: column;
